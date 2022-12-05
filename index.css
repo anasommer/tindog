@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #e5e5e5;
+  color: #f8f8f8;
+}
+
+.wrapper,
+.profile,
+.btn-group {
+  display: flex;
+  background-color: #fff;
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  margin-top: 50px;
+  padding: 10px 0;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.profile {
+  flex-direction: column;
+  position: relative;
+}
+
+#dog-signature {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+}
+
+.btn-group {
+  justify-content: center;
+}
+
+.buttons {
+  height: 80px;
+  width: 80px;
+  margin: 20px 25px 40px;
+  background-color: #fff;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0px 10px 20px #e9e9ea;
+  cursor: pointer;
+}
+
+#btn-like:hover {
+  background-color: #dbfff4;
+}
+
+#btn-dislike:hover {
+  background-color: #ffe7ef;
+}
+
+/* Utilities */
+
+.icon {
+  width: 32px;
+}
+
+#logo {
+  width: 84px;
+}
+
+.profile-img {
+  width: 90%;
+  margin: 10px auto;
+  border-radius: 15px;
+}
+
+.badge {
+  width: 200px;
+  transform: rotate(-30deg);
+  position: absolute;
+  top: 60px;
+  left: 40px;
+}
+
+.hidden {
+  display: none;
+}

@@ -1,8 +1,51 @@
 <html>
-    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-        <script src="/index.js" type="module"></script>
-    </body>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <main>
+      <div class="wrapper">
+        <a href="#"
+          ><img src="/images/icon-profile.png" alt="profile icon" class="icon"
+        /></a>
+        <a href="/index.html"
+          ><img src="/images/logo.png" alt="tindog logo " id="logo"
+        /></a>
+        <a href="#"
+          ><img src="/images/icon-chat.png" alt="chat icon" class="icon"
+        /></a>
+      </div>
+      <div class="profile">
+        <img
+          src="/images/badge-like.png"
+          alt="swipe badge"
+          class="badge hidden"
+        />
+        <img src="/images/dog-rex.jpg" alt="dog image" class="profile-img" />
+        <span id="dog-signature">
+          <h2 class="dog-name">Rex, 25</h2>
+          <p class="dog-bio">Art. Literature. Natural wine. Yoga.</p></span
+        >
+      </div>
+      <div class="btn-group">
+        <button class="buttons" id="btn-dislike">
+          <img src="images/icon-cross.png" alt="dislike button" />
+        </button>
+        <button class="buttons" id="btn-like">
+          <img src="images/icon-heart.png" alt="like button" />
+        </button>
+      </div>
+    </main>
+    <script src="/index.js" type="module"></script>
+  </body>
 </html>
