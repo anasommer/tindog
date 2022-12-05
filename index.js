@@ -43,3 +43,5 @@ function render(index) {
 }
 
 render(index);
+
+// Infinite loop through array
