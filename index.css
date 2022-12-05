@@ -11,7 +11,7 @@ body {
 }
 
 .wrapper,
-.profile,
+#profile,
 .btn-group {
   display: flex;
   background-color: #fff;
@@ -26,7 +26,7 @@ body {
   align-items: center;
 }
 
-.profile {
+#profile {
   flex-direction: column;
   position: relative;
 }
@@ -76,12 +76,13 @@ body {
   border-radius: 15px;
 }
 
-.badge {
+#badge {
   width: 200px;
   transform: rotate(-30deg);
   position: absolute;
-  top: 60px;
-  left: 40px;
+  top: 170px;
+  left: 420px;
+  z-index: 100;
 }
 
 .hidden {
