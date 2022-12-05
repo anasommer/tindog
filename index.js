@@ -11,14 +11,12 @@ let index = 0;
 
 // Make array of dogs
 const dogsArray = dogs.map((dog) => new Dog(dog));
-console.log(dogsArray);
 
 // If Like button is clicked - show Like badge
 likeBtn.addEventListener("click", function () {
   badgeImg.setAttribute("src", "./images/badge-like.png");
   badgeImg.classList.remove("hidden");
   showNextDog();
-  index++;
 });
 
 // If Dislike button is clicked - show Dislike badge
@@ -31,6 +29,9 @@ dislikeBtn.addEventListener("click", function () {
 // Show next dog 1,5 seconds after user clicks button
 function showNextDog() {
   setTimeout(() => {
+    index++;
+    // Infinite loop through array
+    index === dogsArray.length ? (index = 0) : index;
     render(index);
     badgeImg.classList.add("hidden");
   }, 1500);
@@ -43,5 +44,3 @@ function render(index) {
 }
 
 render(index);
-
-// Infinite loop through array
